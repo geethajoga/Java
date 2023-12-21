@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Landing Page - Cookies</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet"> 
+    </head>
+    <body>	
+        <!-- header -->
+        <header id="home">
+            <div class="top">
+                <nav class="nav-bar">
+                    <div class="logo-wrapper">
+                        <a href="#home"><img id="logo" src="data:image/png;base64,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" alt="logo"></a> 
+                    </div>
+                    
+                    <ul id="menu">
+                        <li><a class="nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#product">Product</a></li>
+                        <li><a class="nav-link" href="#order">Order</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                        <li><a class="nav-link" href="#About">About</a></li>
+                    </ul>     
+                </nav>
+                <div id="burger"></div>
+            </div>
+        </header> 
+   
+        <main>
+            <div class="hero-box">
+                <img src="https://www.britannica.com/topic/Cookie-Monster">
+                <div class="hero-text">
+                    <h1>Sweetens your life with our awesome cookies.</h1>
+                </div>
+            </div>
+            <!-- product section -->
+            <section id="product">
+                <h2>🍪 Meet our tasty cookies 🍪</h2>
+                <iframe src="https://www.youtube.com/embed/EVg4mxMG_1Q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="ingredients-wrapper">
+                    <div class="ingredients">
+                        <img src="https://static.wikia.nocookie.net/muppet/images/9/99/MuppetsNow-Scoots.jpg/revision/latest/scale-to-width-down/1000?cb=20231221043139" alt="Monster-cooker">
+                        <div class="ingredients-right">
+                            <h3>Ingredients of our cookies</h3>
+                            <ul>
+                                <li>Flour</li>
+                                <li>Butter</li>
+                                <li>Organic White Sugar / Brown Sugar</li>
+                                <li>Eggs</li>
+                                <li>Chocolate chips</li>
+                            </ul>
+                            <h3>Nutrition</h3>
+                            <p>Serving: 1cookie (using 3 TBS dough) | Calories: 183kcal | Carbohydrates: 26g | Protein: 2g | Fat: 8g | Saturated Fat: 5g | Cholesterol: 27mg | Sodium: 153mg | Potassium: 31mg | Fiber: 1g | Sugar: 18g | Vitamin A: 197IU | Vitamin C: 1mg | Calcium: 24mg | Iron: 1mg</p>
+                        </div>
+                    </div>   
+                </div>	
+            </section>
+            <!--  packages section -->		
+            <section id="order">
+                <h2>🍪 Are you hungry? Order your cookies online 🍪</h2>
+                <div class="order-wrapper">
+                    <div class="order-box">
+                        <img class="order-image" src="https://recipetineats.com/wp-content/uploads/2019/12/Christmas-Cookies-Sugar-Cookies_7.jpg" alt="Classic-Choco Cookie">	
+                        <div class="order-text">
+                            <h4>Classic-Choco Cookies</h4>
+                            <p>Box 20 cookies for £15.00</p>
+                            <button>Order now</button>
+                        </div> 	
+                    </div>
+                    <div class="order-box">
+                        <img class="order-image" src="https://www.allrecipes.com/thmb/QYgcRLFqa5ntvlFYx6CD4ndPYCs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-recipe-10110-soft-christmas-cookies-01-4x3-c75844ae9722478cb58056e30593dbbd.jpg" alt="Strawberry-WhiteChoco Cookie">
+                        <div class="order-text">
+                            <h4>Strawberry-WhiteChoco Cookies</h4>
+                            <p>Box 20 cookies for £20.00</p>
+                            <button>Order now</button>	
+                        </div>	
+                    </div>
+                    <div class="order-box">
+                        <img class="order-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8VdvODJKAhQaFBOdM1H03l3gUG9BjcusHA&usqp=CAU" alt="Cookie Classic">	
+                        <div class="order-text">
+                            <h4>Marshmallow-Choco Cookies</h4>
+                            <p>Box 20 cookies for £20.00</p>
+                            <button>Order now</button>	
+                        </div>
+                    </div>
+                </div>	
+            </section> 
+            <!--  features section -->		
+            <section id="features">
+                <h2>🍪 A product with all the guarantee 🍪</h2>
+                <div class="features-wrapper">
+                    <div class="features-left">
+                        <div class="feature-box">
+                            <i class="fas fa-heartbeat"></i>
+                            <div class="feature-text">
+                                <h3>Healthy, no added additives</h3>
+                                <p>Description text</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <i class='fas fa-piggy-bank'></i>
+                            <div class="feature-text">
+                                <h3>Best Prices for best quality</h3>
+                                <p>Description text</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <i class='fas fa-thumbs-up'></i>
+                            <div class="feature-text">
+                                <h3>Feedbacks 100% Satisfaction</h3>
+                                <p>Description text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab6761610000e5eba3a7cba23d68a4e73c3b8155" alt="happy monster">
+                </div>
+            </section>  
+            <!--  more cookies section -->					
+            <div id="more-cookies">
+                <div class="more-wrapper">
+                    <div class="more-left">
+                        <p>...still hungry?? Order more cookies!.... yummy, yummy!</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601548181/Proyectos/Product%20Landing%20Page%20Cookies/cookie-monster-psd-416700_roh5r7.png" alt="monster with a plate">
+                </div>
+            </div> 
+            <!--  newsletter section -->					
+            <section id="contact">
+                <h2>🍪 Would you like personalized cookies with crazy toppings or some weird creation? 🍪</h2>
+                <div class="news-wrapper">
+                    <img src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601544552/Proyectos/Product%20Landing%20Page%20Cookies/thinker-monster_wtolxp.jpg" alt="monster thinker">
+                    <div class="news-right">
+                        <div class="img-gallery">
+                            <img 
+                            src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601548181/Proyectos/Product%20Landing%20Page%20Cookies/choco-grinch_nf4svl.jpg" 
+                            alt="Cookies 'Grinch' with wasabi flavour.">
+                          
+                            <img 
+                            src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601548181/Proyectos/Product%20Landing%20Page%20Cookies/m_m-cookies_gatluc.jpg" 
+                            alt="Cookies 'Rainbow' with multicolor M&M'S.">
+                            <img 
+                            src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601544506/Proyectos/Product%20Landing%20Page%20Cookies/milkshake-cookie_tzhlus.jpg" 
+                            alt="Monster milkshake with choco cookies flavour.">
+                            <img 
+                            src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601548181/Proyectos/Product%20Landing%20Page%20Cookies/monster-ice-cream_qot4ex.jpg" 
+                            alt="Blue cookies ice cream.">
+                            <img 
+                            src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601544506/Proyectos/Product%20Landing%20Page%20Cookies/macaron-monster_pgiyc9.jpg" 
+                            alt="Cookies monster macarons.">
+                            <img 
+                            src="https://res.cloudinary.com/drpcjt13x/image/upload/v1601548181/Proyectos/Product%20Landing%20Page%20Cookies/halloween-cochocookie_cyuvmh.jpg" 
+                            alt="Scary Halloween cookies.">
+                        </div>
+                        <div class="larger-pic">
+                            <p>Click to see larger image</p>
+                        </div>
+                        <div class="subscribe">
+                            <p>Subscribe for exclusive offers, free tips and news</p>
+                            <form id="form">
+                                <input type="email" id="email" name="email" placeholder="someone@example.com">
+                                <input type="submit" id="submit" name="submit" value="Subscribe">
+                            </form>	
+                        </div>
+                        <div class="social">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>	
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="close-btn">&times;</div>
+                        <img src="#" alt="#" class="full-img">
+                        <p class="caption"></p>
+                    </div>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            <p>&copy; 2020 Guaci Gutiérrez &bull; <a href="https://github.com/geethajoga/java" target="_blank">Portfolio</a></p>		 
+        </footer>  
+        
+        <script src="script.js"></script>
+    </body>
+</html>
