@@ -1,0 +1,14 @@
+{
+  "name": "snakegame",
+  "version": "1.0.0",
+  "description": "ma",
+  "main": "ma",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "package": "^1.0.1"
+  }
+}
